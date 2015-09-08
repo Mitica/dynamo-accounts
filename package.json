@@ -1,0 +1,39 @@
+{
+  "name": "dynamo-accounts",
+  "version": "0.0.1",
+  "description": "Nodejs Accounts Management module based on DynamoDB",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec -t 20000",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mitica/dynamo-accounts-js.git"
+  },
+  "engines": [
+    "node >=0.10.0"
+  ],
+  "keywords": [
+    "accounts",
+    "dynamo",
+    "dynamo-accounts"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitica/dynamo-accounts-js/issues"
+  },
+  "homepage": "https://github.com/Mitica/dynamo-accounts-js",
+  "devDependencies": {
+    "mocha": "^2.3.0"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "bson-objectid": "^1.1.1",
+    "joi": "^6.6.1",
+    "lodash": "^3.10.1",
+    "node-uuid": "^1.4.3",
+    "vogels": "^2.0.0-rc10"
+  }
+}
