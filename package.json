@@ -33,6 +33,7 @@
     "bson-objectid": "^1.1.1",
     "joi": "^6.6.1",
     "lodash": "^3.10.1",
+    "memory-cache": "^0.1.4",
     "node-uuid": "^1.4.3",
     "vogels": "^2.0.0-rc10"
   }
