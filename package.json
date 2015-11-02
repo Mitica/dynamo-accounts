@@ -4,8 +4,9 @@
   "description": "Nodejs Accounts Management module based on DynamoDB",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -R spec -t 20000",
-    "lint": "eslint ."
+    "test": "./node_modules/mocha/bin/mocha -R spec",
+    "lint": "eslint .",
+    "docs": "jsdoc ./lib -d ./docs"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/Mitica/dynamo-accounts-js",
   "devDependencies": {
+    "dotenv": "^1.2.0",
     "mocha": "^2.3.0"
   },
   "dependencies": {
