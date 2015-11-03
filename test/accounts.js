@@ -48,8 +48,8 @@ describe('Accounts', function() {
 					}, {}).then(function(account) {
 						assert.ok(account);
 
-						return api.accounts.getOne(account.id).then(function(account) {
-							assert.ok(account);
+						return api.accounts.getOne(account.id).then(function(foundAccount) {
+							assert.ok(foundAccount);
 						});
 					});
 				});
