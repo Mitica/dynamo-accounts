@@ -35,10 +35,10 @@ describe('Accounts', function() {
 
 	describe('#api()', function() {
 		var api = Accounts.api(APP_ID);
-		describe('accounts', function() {
+		describe('access', function() {
 			describe('#providerLogin()', function() {
 				it('should login', function() {
-					return api.accounts.providerLogin({
+					return api.providerLogin({
 						id: 'id',
 						provider: 'google',
 						emails: [{
@@ -47,18 +47,20 @@ describe('Accounts', function() {
 						username: 'admin'
 					}, {}).then(function(account) {
 						assert.ok(account);
+						console.log('created account', account);
 
-						return api.accounts.getOne(account.id).then(function(foundAccount) {
+						return api.access.getAccount(account.id).then(function(foundAccount) {
 							assert.ok(foundAccount);
+							console.log('foundAccount', foundAccount);
 						});
 					});
 				});
 
 			});
 
-			describe('#getOne()', function() {
+			describe('#getAccount()', function() {
 				it('should not find account', function() {
-					return api.accounts.getOne('id').then(function(account) {
+					return api.access.getAccount('id').then(function(account) {
 						assert.equal(undefined, account);
 					});
 				});
