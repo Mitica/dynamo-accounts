@@ -11,11 +11,11 @@ var dynamoAccounts = require('dynamo-accounts');
 
 var appId = 'UNIQUE-ID-FOR-YOUR-APP';
 
-var api = dynamoAccounts.api(appId);
+var accounts = dynamoAccounts.api(appId);
 
-api.accounts.providerLogin(profile, accessData).then(function(account){});
+accounts.providerLogin(profile, accessData).then(function(account){});
 
-api.accounts.getOne('id').then(function(account){});
+accounts.access.getAccount('id').then(function(account){});
 
-api.accounts.getByUsername('username').then(function(account){});
+accounts.access.getAccountByUsername('username').then(function(account){});
 ```
