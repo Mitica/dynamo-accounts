@@ -1,21 +1,12 @@
 # dynamo-accounts
 
-**dynamo-accounts** is a Nodejs Accounts Management module based on DynamoDB.
-
-Currently it supports just provider login: google, facebook, yahoo. And not it doesn't support providers that not offer user's email.
+A DynamoDB storage implementation for [accounts](https://github.com/Ournet/node-accounts).
 
 ## Usage
 
 ```
-var dynamoAccounts = require('dynamo-accounts');
+var storage = require('dynamo-accounts').storage();
 
-var appId = 'UNIQUE-ID-FOR-YOUR-APP';
+var accounts = require('accounts')(storage);
 
-var accounts = dynamoAccounts.api(appId);
-
-accounts.providerLogin(profile, accessData).then(function(account){});
-
-accounts.access.getAccount('id').then(function(account){});
-
-accounts.access.getAccountByUsername('username').then(function(account){});
 ```

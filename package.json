@@ -1,12 +1,11 @@
 {
   "name": "dynamo-accounts",
-  "version": "0.0.3",
-  "description": "Nodejs Accounts Management module based on DynamoDB",
+  "version": "0.1.0",
+  "description": "A DynamoDB storage implementation for accounts",
   "main": "./lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -R spec",
-    "lint": "eslint .",
-    "docs": "jsdoc ./lib -d ./docs"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -31,12 +30,9 @@
     "mocha": "^2.3.0"
   },
   "dependencies": {
-    "bluebird": "^2.9.34",
-    "bson-objectid": "^1.1.1",
-    "joi": "^6.6.1",
-    "lodash": "^3.10.1",
-    "memory-cache": "^0.1.4",
-    "node-uuid": "^1.4.3",
-    "vogels": "^2.0.0-rc10"
+    "bluebird": "^3.0.5",
+    "joi": "5.x.x",
+    "lodash": "4.x.x",
+    "vogels-helpers": "^0.2.2"
   }
 }
