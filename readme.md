@@ -1,6 +1,6 @@
 # dynamo-accounts
 
-A DynamoDB storage implementation for [accounts](https://github.com/Ournet/node-accounts).
+A DynamoDB storage implementation for [accounts](https://github.com/Mitica/node-accounts).
 
 ## Usage
 
